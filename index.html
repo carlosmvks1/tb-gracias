@@ -3,130 +3,79 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b5d5b">
-  <meta name="description" content="TB Gracias: información breve y confiable sobre tuberculosis, signos, prevención, diagnóstico y tratamiento.">
-  <title>TB Gracias | Información sobre tuberculosis</title>
+  <meta name="theme-color" content="#063d3a">
+  <meta name="description" content="TB Gracias: síntomas de tuberculosis, atención, prevención y tratamiento, con fuentes oficiales consultables.">
+  <title>TB Gracias | Síntomas, atención y prevención</title>
   <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/navigation.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#contenido">Saltar al contenido</a>
-  <div class="masthead"><div class="wrap"><a class="brand" href="#inicio">TB<span> / </span>GRACIAS</a><span>UNAH · Salud Pública IV · 2026</span></div></div>
-  <header id="inicio">
-    <div class="wrap hero">
-      <div class="hero-copy"><span class="eyebrow">Información que nos cuida · Gracias, Lempira</span>
-      <h1>Conocer la TB.<br><span>Actuar a tiempo.</span></h1>
-      <p>Información breve para reconocer, prevenir y buscar atención oportuna ante la tuberculosis.</p>
-      <div class="hero-actions"><a class="button" href="#sintomas">Reconocé los síntomas <span aria-hidden="true">↗</span></a><a class="text-link" href="#que-es">Conocé la tuberculosis ↓</a></div>
-      <div class="hero-note"><span aria-hidden="true">01 /</span> La detección temprana protege tu salud y la de quienes te rodean.</div></div>
-      <figure class="hero-image"><img src="assets/img/tb-bacteria.jpg" alt="Micrografía electrónica coloreada de bacterias Mycobacterium tuberculosis" width="700" height="467" fetchpriority="high"><figcaption><span>LA TB, DE CERCA</span> Bacterias de la tuberculosis · Imagen microscópica coloreada<br>NIAID / CDC PHIL #18139</figcaption></figure>
-    </div>
-  </header>
-  <aside class="quick wrap"><strong>¿Tenés síntomas compatibles?</strong><span>Comunicalos al personal de salud para recibir evaluación. Tener síntomas no significa automáticamente tener tuberculosis.</span><a href="#que-hacer" aria-label="Ver qué hacer si tengo síntomas">Qué hacer ↗</a></aside>
-
-  <nav aria-label="Temas de tuberculosis">
-    <div class="wrap">
-      <a href="#que-es">¿Qué es?</a>
-      <a href="#transmision">Transmisión</a>
-      <a href="#sintomas">Síntomas</a>
-      <a href="#que-hacer">Qué hacer</a>
-      <a href="#prevencion">Prevención</a>
-      <a href="#tratamiento">Tratamiento</a>
-      <a href="#mitos">Mitos</a>
-    </div>
-  </nav>
-
+  <div class="masthead wrap"><a class="brand" href="#inicio" aria-label="TB Gracias, inicio">TB<span> / </span>GRACIAS</a><span>Proyecto educativo<br>Gracias, Lempira · 2026</span></div>
+  <header id="inicio"><div class="wrap hero">
+    <div class="hero-copy"><span class="eyebrow">Información sobre tuberculosis</span><h1>Conocé las señales.<br><span>Sabé qué hacer.</span></h1><p>Encontrá orientación para consultar, cuidarte y acompañar el tratamiento.</p><a class="button" href="#que-hacer">Necesito saber qué hacer <span aria-hidden="true">↓</span></a><a class="review-link" href="#fuentes">Revisión documental: <time datetime="2026-10-22">22 de octubre de 2026</time></a></div>
+    <figure class="hero-image" data-evidence="11"><img src="assets/img/tb-bacteria.jpg" alt="Micrografía electrónica coloreada de bacterias Mycobacterium tuberculosis" width="700" height="467" fetchpriority="high"><figcaption>Bacterias de la tuberculosis, vistas al microscopio.<br>Imagen coloreada · NIAID / <a href="#fuente-11">CDC PHIL #18139</a></figcaption></figure>
+  </div></header>
+  <div class="wrap entry" aria-labelledby="entry-title"><h2 id="entry-title">¿Qué necesitás consultar?</h2><div class="entry-grid">
+    <a href="#sintomas"><span class="entry-index" aria-hidden="true">01</span><span><strong>Tengo síntomas</strong><small>Ver señales y cuándo consultar</small></span><span aria-hidden="true">↗</span></a>
+    <a href="#contacto"><span class="entry-index" aria-hidden="true">02</span><span><strong>Tuve contacto</strong><small>Qué hacer después de una exposición</small></span><span aria-hidden="true">↗</span></a>
+    <a href="#prevencion"><span class="entry-index" aria-hidden="true">03</span><span><strong>Quiero prevenir</strong><small>Medidas para reducir la transmisión</small></span><span aria-hidden="true">↗</span></a>
+  </div></div>
+  <nav class="topic-nav" aria-label="Navegación por temas"><div class="wrap"><a href="#sintomas">Síntomas</a><a href="#que-hacer">Qué hacer</a><a href="#prevencion">Prevención</a><a href="#mitos">Preguntas</a></div></nav>
   <main id="contenido" class="wrap" tabindex="-1">
-    <section id="que-es" class="card introduction"><span class="section-number">01 / CONOCER</span>
-      <h2>¿Qué es la tuberculosis?</h2>
-      <p>La tuberculosis (TB) es una enfermedad infecciosa causada por bacterias del complejo <em>Mycobacterium tuberculosis</em>. Afecta principalmente los pulmones, aunque también puede comprometer otros órganos.</p>
+    <section id="sintomas" class="card" aria-labelledby="symptom-title">
+      <div class="section-heading"><div><span class="eyebrow">Reconocer</span><h2 id="symptom-title">Estas señales merecen una consulta</h2></div><span class="section-index" aria-hidden="true">01 /</span></div>
+      <div data-claim="sintomas" data-evidence="1 4"><p>La tuberculosis puede causar los siguientes síntomas. Comunicalos al personal de salud para que te evalúe; no necesitás presentarlos todos para consultar.</p><ul class="symptoms"><li>Tos, con o sin flema</li><li>Fiebre</li><li>Sudoración nocturna</li><li>Pérdida de peso involuntaria</li><li>Tos con sangre</li><li>Cansancio o debilidad</li></ul><p class="notice"><strong>No esperés a que la tos dure semanas para comunicarla.</strong> El protocolo hondureño contempla tos de cualquier duración en la evaluación de una posible TB.</p><p class="reading-note">Estos síntomas por sí solos no confirman tuberculosis. El diagnóstico requiere evaluación y las pruebas que correspondan. <a href="#diagnostico">Conocé cómo se evalúa.</a></p><p class="citation">Respaldo: <a href="#fuente-1">SESAL [1], pp. 20–22</a> · <a href="#fuente-4">CDC: síntomas [4]</a></p></div>
+      <aside id="atencion-urgente" class="urgent" data-claim="urgencia" data-evidence="10" aria-labelledby="urgent-title"><h3 id="urgent-title">Si tosés sangre, buscá valoración urgente</h3><p>Si expulsás más que unas pequeñas manchas o vetas de sangre, o la tos con sangre se acompaña de dificultad para respirar o dolor de pecho, buscá atención de emergencia.</p><p class="citation">Respaldo: <a href="#fuente-10">NHS: tos con sangre [10]</a></p></aside>
     </section>
-
-    <section id="transmision" class="grid">
-      <article class="mini">
-        <h2>¿Cómo se transmite?</h2>
-        <p>La TB pulmonar puede transmitirse por el aire cuando una persona con enfermedad transmisible tose, habla, canta o estornuda.</p>
-        <p>El riesgo aumenta con la exposición cercana y prolongada, especialmente en espacios cerrados o con ventilación insuficiente.</p>
-      </article>
-      <article class="mini">
-        <h2>Importante</h2>
-        <p>La tuberculosis <strong>no se transmite por dar la mano ni por tocar objetos de uso cotidiano</strong>. La prevención se centra en reconocer síntomas, reducir la exposición respiratoria y facilitar el diagnóstico oportuno.</p>
-      </article>
+    <section id="que-hacer" class="card action-card" aria-labelledby="action-title">
+      <div class="section-heading"><div><span class="eyebrow">Actuar</span><h2 id="action-title">¿Qué hago ahora?</h2></div><span class="section-index" aria-hidden="true">02 /</span></div>
+      <ol class="steps" data-claim="pasos" data-evidence="1 7 9"><li><strong>Comunicá tus síntomas.</strong><p>Contale al personal de salud qué sentís, desde cuándo y si estuviste cerca de alguien con TB.</p></li><li><strong>Acudí a la evaluación.</strong><p>El personal revisará tus síntomas, antecedentes y posibles exposiciones.</p></li><li><strong>Realizá las pruebas indicadas.</strong><p>Según tu evaluación, pueden solicitarte una muestra de flema, pruebas moleculares u otros estudios.</p></li><li><strong>Seguí las indicaciones.</strong><p>Cumplí las medidas respiratorias, las citas y el tratamiento que te indiquen.</p></li></ol>
+      <p class="citation">Respaldo: <a href="#fuente-1">SESAL [1], secciones 2.1–2.2</a> · <a href="#fuente-7">CDC: pruebas [7]</a> · <a href="#fuente-9">CDC: prevención [9]</a></p>
+      <div id="contacto" class="contact-note" data-claim="contacto" data-evidence="6"><h3>¿Tuviste contacto con alguien con TB activa?</h3><p>Consultá al personal de salud sobre la necesidad de pruebas, aunque te sintás bien. Explicá cuándo y cómo fue el contacto.</p><p class="citation">Respaldo: <a href="#fuente-6">CDC: exposición [6]</a></p></div>
+      <details id="diagnostico" class="disclosure" data-claim="diagnostico" data-evidence="1 7"><summary>¿Cómo se confirma el diagnóstico?</summary><div class="disclosure-body"><p>La evaluación puede incluir pruebas moleculares en una muestra de flema y, cuando corresponde, radiografía de tórax u otros estudios.</p><p>Las pruebas de sangre IGRA y la prueba cutánea de tuberculina detectan infección. Por sí solas no determinan si hay enfermedad activa; un resultado negativo tampoco la descarta siempre.</p><p class="citation">Respaldo: <a href="#fuente-1">SESAL [1], sección 2.2</a> · <a href="#fuente-7">CDC: pruebas [7]</a></p></div></details>
     </section>
-
-    <section id="sintomas" class="card"><span class="section-number">02 / RECONOCER</span>
-      <h2>¿Cuándo debemos sospechar tuberculosis?</h2>
-      <p>Debe solicitarse evaluación si aparecen uno o más síntomas compatibles:</p>
-      <div class="symptoms">
-        <div class="pill">Tos</div><div class="pill">Fiebre</div><div class="pill">Sudoración nocturna</div>
-        <div class="pill">Pérdida de peso</div><div class="pill">Expectoración con sangre</div><div class="pill">Cansancio persistente</div>
-      </div>
-      <div class="notice">No es necesario presentar todos los síntomas para solicitar una evaluación.</div>
+    <section id="que-es" class="card" aria-labelledby="about-title">
+      <div class="section-heading"><div><span class="eyebrow">Comprender</span><h2 id="about-title">La TB, explicada de forma sencilla</h2></div><span class="section-index" aria-hidden="true">03 /</span></div>
+      <div data-claim="definicion" data-evidence="3"><p>La tuberculosis (TB) es una enfermedad infecciosa causada por bacterias. Afecta sobre todo a los pulmones, pero también puede afectar otros órganos.</p><p class="citation">Respaldo: <a href="#fuente-3">OMS: tuberculosis [3]</a></p></div>
+      <div class="two-columns"><article class="info-panel" data-claim="latente" data-evidence="8"><span class="label">Infección latente</span><h3>Hay infección, sin enfermedad activa</h3><p>No provoca síntomas de TB ni se transmite a otras personas. Puede evolucionar a enfermedad activa; el personal de salud valora el tratamiento preventivo.</p><p class="citation">Respaldo: <a href="#fuente-8">CDC: TB inactiva [8]</a></p></article><article class="info-panel" data-claim="activa" data-evidence="3 5"><span class="label">Enfermedad activa</span><h3>Las bacterias se multiplican y causan enfermedad</h3><p>Puede haber síntomas, aunque algunas personas no los presentan. La TB activa de los pulmones o la garganta puede transmitirse por el aire.</p><p class="citation">Respaldo: <a href="#fuente-3">OMS [3]</a> · <a href="#fuente-5">CDC: transmisión [5]</a></p></article></div>
+      <div id="transmision" class="transmission" data-claim="transmision" data-evidence="5"><h3>¿Cómo se transmite?</h3><p>Alguien con TB activa en pulmones o garganta puede liberar bacterias al toser, hablar o cantar. Otras personas pueden inhalarlas. La transmisión es más probable en espacios cerrados con mala circulación del aire.</p><p><strong>No se transmite por dar la mano, compartir alimentos o bebidas, ni tocar la ropa de cama o el asiento del inodoro.</strong></p><p class="citation">Respaldo: <a href="#fuente-5">CDC: causas y transmisión [5]</a></p></div>
     </section>
-
-    <figure class="science-strip"><img src="assets/img/tb-microscopy.jpg" alt="Bacilos de tuberculosis visibles en una muestra teñida con Ziehl-Neelsen, aumentada mil veces" width="700" height="467" loading="lazy"><figcaption><span class="section-number">DEL SÍNTOMA A LA EVALUACIÓN</span><h2>El diagnóstico empieza<br>con una consulta.</h2><p>Las pruebas indicadas por el personal de salud ayudan a identificar la tuberculosis.</p><small>Microscopía de una muestra teñida · CDC / Dr. George P. Kubica · PHIL #5789</small></figcaption></figure>
-    <section id="que-hacer" class="card"><span class="section-number">03 / ACTUAR</span>
-      <h2>¿Qué hago si tengo síntomas?</h2>
-      <div class="steps">
-        <div class="step"><div><strong>Comunicalos al personal de salud.</strong><br>La detección comienza informando oportunamente los síntomas.</div></div>
-        <div class="step"><div><strong>Permití la evaluación clínica.</strong><br>El personal de salud determinará si existe sospecha de tuberculosis.</div></div>
-        <div class="step"><div><strong>Realizá las pruebas indicadas.</strong><br>Cuando corresponde, pueden solicitarse muestras y pruebas moleculares.</div></div>
-        <div class="step"><div><strong>Seguí las indicaciones sanitarias.</strong><br>Las medidas dependerán de la evaluación y de los resultados obtenidos.</div></div>
-      </div>
+    <section id="prevencion" class="card" aria-labelledby="prevention-title">
+      <div class="section-heading"><div><span class="eyebrow">Cuidarnos</span><h2 id="prevention-title">¿Cómo reducimos la transmisión?</h2></div><span class="section-index" aria-hidden="true">04 /</span></div>
+      <ul class="prevention-list" data-claim="prevencion" data-evidence="2 3 9"><li><strong>Consultá por los síntomas.</strong><span>La atención y el tratamiento tempranos ayudan a reducir la propagación.</span></li><li><strong>Favorecé la ventilación.</strong><span>La circulación de aire forma parte de las medidas de prevención.</span></li><li><strong>Cubrí boca y nariz al toser o estornudar.</strong><span>Si tenés TB, seguí las indicaciones de higiene respiratoria.</span></li><li><strong>Seguí las medidas respiratorias indicadas.</strong><span>Usá la mascarilla y cumplí la separación o el aislamiento que indique el personal de salud.</span></li><li><strong>Acudí a las pruebas y controles.</strong><span>Seguí la evaluación que corresponda por síntomas o por contacto con una persona con TB.</span></li><li><strong>Completá el tratamiento prescrito.</strong><span>Si te indican tratamiento para TB activa o preventivo, seguí el plan del personal de salud.</span></li></ul>
+      <p class="citation">Respaldo: <a href="#fuente-2">SESAL [2], secciones 7.1, 7.2 y 8.7</a> · <a href="#fuente-3">OMS: prevención [3]</a> · <a href="#fuente-9">CDC: prevención [9]</a></p>
     </section>
-
-    <section id="prevencion" class="card"><span class="section-number">04 / PREVENIR</span>
-      <h2>¿Cómo podemos disminuir la transmisión?</h2>
-      <ul>
-        <li>Comunicar tempranamente los síntomas compatibles.</li>
-        <li>Favorecer la ventilación de los espacios cuando sea posible.</li>
-        <li>Cubrir boca y nariz al toser o estornudar.</li>
-        <li>Utilizar mascarilla cuando sea indicada por el personal de salud.</li>
-        <li>Cumplir medidas de separación o aislamiento respiratorio cuando correspondan.</li>
-        <li>Realizar las pruebas diagnósticas indicadas.</li>
-        <li>Cumplir correctamente el tratamiento cuando exista diagnóstico de tuberculosis.</li>
-      </ul>
+    <section id="tratamiento" class="treatment" aria-labelledby="treatment-title">
+      <div class="treatment-copy" data-claim="tratamiento" data-evidence="3 9 12"><span class="eyebrow">Acompañar el tratamiento</span><h2 id="treatment-title">La tuberculosis se puede tratar</h2><p>El tratamiento de la enfermedad activa utiliza antibióticos. Los medicamentos y su duración dependen de la evaluación y del tipo de TB.</p><p><strong>Sentirte mejor no significa que debás suspenderlo.</strong> Tomá los medicamentos durante todo el tiempo indicado. Interrumpirlos antes de tiempo o tomarlos de forma irregular puede favorecer la resistencia a los medicamentos.</p><p>Si tenés molestias o dificultades para tomar los medicamentos, contactá al personal de salud. Ante señales como piel u ojos amarillos o sensación de desmayo, buscá atención inmediata. El equipo de salud puede indicar cambios o suspender los medicamentos.</p><p class="citation">Respaldo: <a href="#fuente-3">OMS: tratamiento [3]</a> · <a href="#fuente-9">CDC: prevención [9]</a> · <a href="#fuente-12">CDC: tratamiento [12]</a></p></div>
+      <figure data-evidence="13"><img src="assets/img/tb-microscopy.jpg" alt="Muestra con bacterias de tuberculosis teñida con Ziehl-Neelsen, aumentada mil veces" width="700" height="467" loading="lazy"><figcaption>Microscopía de una muestra teñida · CDC / Dr. George P. Kubica · <a href="#fuente-13">PHIL #5789</a></figcaption></figure>
     </section>
-
-    <section id="tratamiento" class="grid treatment" aria-label="Tratamiento">
-      <article class="mini">
-        <h2>La tuberculosis se puede tratar</h2>
-        <p>Una persona diagnosticada debe tomar los medicamentos durante todo el tiempo indicado por el personal de salud, incluso cuando empiece a sentirse mejor.</p>
-      </article>
-      <article class="mini">
-        <h2>No suspendás el tratamiento</h2>
-        <p>Interrumpir los medicamentos por cuenta propia puede favorecer el fracaso terapéutico y la aparición o selección de tuberculosis resistente a medicamentos.</p>
-      </article>
+    <section id="mitos" class="card" aria-labelledby="faq-title">
+      <div class="section-heading"><div><span class="eyebrow">Resolver dudas</span><h2 id="faq-title">Preguntas y mitos frecuentes</h2></div><span class="section-index" aria-hidden="true">05 /</span></div>
+      <details class="disclosure" data-claim="mito-tos" data-evidence="1 7"><summary>¿Tener tos significa que tengo TB?</summary><div class="disclosure-body"><p>No. La tos por sí sola no confirma TB. Necesitás evaluación y las pruebas indicadas para determinar la causa.</p><p class="citation">Respaldo: <a href="#fuente-1">SESAL [1], secciones 1.6 y 2</a> · <a href="#fuente-7">CDC: pruebas [7]</a></p></div></details>
+      <details class="disclosure" data-claim="mito-tratamiento" data-evidence="12"><summary>¿Puedo dejar el tratamiento si ya me siento mejor?</summary><div class="disclosure-body"><p>No lo suspendás por tu cuenta porque te sintás mejor. Completalo según las indicaciones; si aparecen problemas, contactá al personal de salud.</p><p class="citation">Respaldo: <a href="#fuente-12">CDC: tratamiento [12]</a></p></div></details>
+      <details class="disclosure" data-claim="mito-poblacion" data-evidence="7"><summary>¿La TB afecta solamente a personas privadas de libertad?</summary><div class="disclosure-body"><p>No. Cualquier persona puede desarrollar TB. El riesgo de exposición y de enfermar varía entre personas y entornos.</p><p class="citation">Respaldo: <a href="#fuente-7">CDC: quién debería hacerse pruebas [7]</a></p></div></details>
+      <details class="disclosure" data-claim="mito-deteccion" data-evidence="3"><summary>¿Detectarla temprano ayuda a otras personas?</summary><div class="disclosure-body"><p>Sí. La evaluación y el tratamiento tempranos ayudan a reducir la transmisión y mejoran las posibilidades de recuperación.</p><p class="citation">Respaldo: <a href="#fuente-3">OMS: prevención [3]</a></p></div></details>
     </section>
-
-    <section id="mitos" class="card"><span class="section-number">05 / INFORMARSE</span>
-      <h2>Mitos y realidades</h2>
-      <div class="myth"><span class="tag false">Falso</span><h3>“Si tengo tos, definitivamente tengo tuberculosis.”</h3><p>La tos tiene muchas causas. Sin embargo, debe evaluarse cuando existe sospecha de TB.</p></div>
-      <div class="myth"><span class="tag false">Falso</span><h3>“Si me siento mejor puedo dejar el tratamiento.”</h3><p>El tratamiento debe completarse según las indicaciones del personal de salud.</p></div>
-      <div class="myth"><span class="tag false">Falso</span><h3>“La tuberculosis solamente afecta a las personas privadas de libertad.”</h3><p>Cualquier persona puede desarrollar tuberculosis.</p></div>
-      <div class="myth"><span class="tag true">Verdadero</span><h3>“Detectarla temprano ayuda a proteger a otras personas.”</h3><p>La identificación y atención oportunas son componentes fundamentales para reducir la transmisión.</p></div>
-    </section>
-
-    <section class="card final-call">
-      <h2>Ante cualquier sospecha</h2>
-      <p><strong>Comunicá tus síntomas al personal de salud y solicitá una evaluación.</strong></p>
-      <p>La detección temprana protege tu salud y contribuye a proteger a quienes te rodean.</p>
-    </section>
-
-    <section class="card sources">
-      <h2>Fuentes</h2>
-      <p>Secretaría de Salud de Honduras. <em>Protocolo de Diagnóstico y Tratamiento de la Tuberculosis en Honduras</em>. PT49:2024. 2025.</p>
-      <p>Secretaría de Salud de Honduras. <em>Manual para la Prevención y Atención de la Tuberculosis en Honduras</em>. M18:2019, Rev.01-2025. 2025.</p>
-      <p><a href="https://www.who.int/es/news-room/fact-sheets/detail/tuberculosis">Organización Mundial de la Salud. Información técnica sobre tuberculosis. ↗</a></p>
-      <details><summary>Imágenes y créditos</summary><p>Imágenes de dominio público, disponibles gratuitamente en CDC PHIL: <a href="https://wwwn.cdc.gov/phil/Details.aspx?pid=18139">NIAID, PHIL #18139</a> y <a href="https://wwwn.cdc.gov/phil/Details.aspx?pid=5789">CDC / Dr. George P. Kubica, PHIL #5789</a>. Recortadas para su presentación. Su uso no implica respaldo institucional de CDC o NIAID.</p></details>
+    <aside class="final-call"><div><h2>¿Tenés una inquietud sobre TB?</h2><p>Usá estos pasos para preparar tu consulta.</p></div><a class="button" href="#que-hacer">Ver qué hacer <span aria-hidden="true">↑</span></a></aside>
+    <section id="fuentes" class="sources" aria-labelledby="sources-title"><span class="eyebrow">Información con respaldo</span><h2 id="sources-title">Fuentes y revisión</h2><p>Revisión documental realizada el <time datetime="2026-10-22">22 de octubre de 2026</time>. Los enlaces de respaldo de cada bloque remiten a estas fuentes. La información puede actualizarse y no sustituye una evaluación clínica.</p><p><a href="docs/revision.html">Consultar el registro de revisión y los criterios utilizados ↗</a></p>
+      <details class="disclosure source-list"><summary>Consultar las 13 fuentes y créditos</summary><div class="disclosure-body"><ol>
+        <li id="fuente-1"><a href="https://honduras.bvsalud.org/wp-content/uploads/2025/08/PROTOCOLO-DE-DIAGNOSTICO-Y-TRATAMIENTO-DE-LA-TUBERCULOSIS-EN-HONDURAS.pdf">SESAL. Protocolo de Diagnóstico y Tratamiento de la Tuberculosis en Honduras. PT49:2024, marzo de 2025 (PDF).</a> Secciones 1.6, 2.1 y 2.2. Páginas impresas 18–28; páginas 24–34 del visor.</li>
+        <li id="fuente-2"><a href="https://honduras.bvsalud.org/wp-content/uploads/2025/05/Manual-para-la-Prevencion-y-Atencion-de-la-TB-en-Honduras.pdf">SESAL. Manual para la Prevención y Atención de la Tuberculosis en Honduras. M18:2019, Rev.01–2025 (PDF).</a> Secciones 7.1, 7.2 y 8.7; páginas impresas 13–19 y 34–35.</li>
+        <li id="fuente-3"><a href="https://www.who.int/es/news-room/fact-sheets/detail/tuberculosis">OMS. Tuberculosis.</a> Ficha del 24 de marzo de 2026: panorama general, síntomas, prevención, diagnóstico y tratamiento.</li>
+        <li id="fuente-4"><a href="https://www.cdc.gov/tb/es/signs-symptoms/signos-y-sintomas.html">CDC. Signos y síntomas de la tuberculosis.</a> 11 de febrero de 2025.</li>
+        <li id="fuente-5"><a href="https://www.cdc.gov/tb/es/causes/causas.html">CDC. Tuberculosis: causas y cómo se propaga.</a> 11 de febrero de 2025.</li>
+        <li id="fuente-6"><a href="https://www.cdc.gov/tb/exposure/index.html">CDC. Exposure to Tuberculosis.</a> 25 de marzo de 2024; en inglés.</li>
+        <li id="fuente-7"><a href="https://www.cdc.gov/tb/es/testing/pruebas.html">CDC. Pruebas para detectar la tuberculosis.</a> 11 de febrero de 2025.</li>
+        <li id="fuente-8"><a href="https://www.cdc.gov/tb/es/about/la-tuberculosis-inactiva.html">CDC. Acerca de la tuberculosis inactiva.</a> 7 de febrero de 2025.</li>
+        <li id="fuente-9"><a href="https://www.cdc.gov/tb/es/prevention/prevencion.html">CDC. Cómo prevenir la tuberculosis.</a> 13 de febrero de 2025.</li>
+        <li id="fuente-10"><a href="https://www.nhs.uk/symptoms/coughing-up-blood/">NHS. Coughing up blood.</a> Revisada el 13 de junio de 2024; en inglés. Se utiliza la orientación clínica, sin trasladar los teléfonos ni las rutas asistenciales del Reino Unido.</li>
+        <li id="fuente-11"><a href="https://wwwn.cdc.gov/phil/Details.aspx?pid=18139">CDC PHIL #18139. NIAID, 2010.</a> Micrografía electrónica coloreada. Dominio público; CDC es la fuente gratuita.</li>
+        <li id="fuente-12"><a href="https://www.cdc.gov/tb/es/treatment/tratamiento.html">CDC. Tratamiento de la tuberculosis.</a> 13 de febrero de 2025.</li>
+        <li id="fuente-13"><a href="https://wwwn.cdc.gov/phil/Details.aspx?pid=5789">CDC PHIL #5789. CDC / Dr. George P. Kubica.</a> Tinción de Ziehl-Neelsen, aumento de 1000×. Dominio público; CDC es la fuente gratuita.</li>
+      </ol><p>Las imágenes se recortan visualmente para su presentación. Su uso y las referencias no implican respaldo institucional del proyecto.</p><a href="#inicio">Volver al inicio ↑</a></div></details>
     </section>
   </main>
-
-  <footer>
-    <div class="wrap">
-      <strong>Estrategia de intervención para la detección oportuna y prevención de la tuberculosis en la población del Centro Penitenciario de Gracias, Lempira, 2026.</strong>
-      <p>Salud Pública IV · Facultad de Ciencias Médicas · Universidad Nacional Autónoma de Honduras · Sexta Rotación, 2026.</p>
-      <p>Material educativo. No sustituye la valoración realizada por personal de salud.</p>
-    </div>
-  </footer>
+  <footer><div class="wrap"><strong>TB Gracias · Proyecto educativo de Salud Pública IV</strong><p>Estrategia de educación para la detección oportuna y prevención de la tuberculosis en la población del Centro Penitenciario de Gracias, Lempira, 2026.</p><p>Material educativo. Para decisiones sobre tu salud, consultá al personal sanitario.</p><a href="#fuentes">Fuentes</a><span aria-hidden="true"> · </span><a href="#inicio">Volver al inicio ↑</a></div></footer>
 </body>
 </html>
