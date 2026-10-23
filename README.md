@@ -4,6 +4,8 @@ Material educativo de Salud Pública IV, UNAH, 2026. Información sobre tubercul
 
 Sitio: https://carlosmvks1.github.io/tb-gracias/
 
+La pestaña y la identidad al compartir enlaces usan “Tuberculosis: Guía”. Todas las páginas incluyen favicon SVG/ICO/PNG, icono para iOS, URL canónica y metadatos Open Graph y Twitter con una imagen de presentación de 1200 × 630 en `assets/brand/`. No dependen de JavaScript para que los lectores de enlaces los detecten.
+
 Página estática sin dependencias de compilación. GitHub Pages publica `index.html` desde la raíz de `main`. Se conserva `.nojekyll`; todas las rutas de recursos son relativas para funcionar bajo `/tb-gracias/`.
 
 La guía se organiza en páginas estáticas independientes: portada (index.html), síntomas y atención (sintomas.html), prevención (prevencion.html), tratamiento (tratamiento.html), información sobre TB (conocer.html), preguntas (preguntas.html) y fuentes (fuentes.html).
