@@ -6,11 +6,13 @@ Sitio: https://carlosmvks1.github.io/tb-gracias/
 
 Página estática sin dependencias de compilación. GitHub Pages publica `index.html` desde la raíz de `main`. Se conserva `.nojekyll`; todas las rutas de recursos son relativas para funcionar bajo `/tb-gracias/`.
 
-La interfaz prioriza síntomas, acciones y exposición, con tres accesos directos y navegación de cuatro temas sin desplazamiento horizontal. Las respuestas adicionales usan elementos desplegables nativos. El contenido y los enlaces funcionan sin JavaScript; `assets/navigation.js` mejora la ubicación actual y la apertura de referencias.
+La guía se organiza en páginas estáticas independientes: portada (index.html), síntomas y atención (sintomas.html), prevención (prevencion.html), tratamiento (tratamiento.html), información sobre TB (conocer.html), preguntas (preguntas.html) y fuentes (fuentes.html).
 
-La capa visual editorial se encuentra en `assets/editorial.css`: encabezados con etiquetas angulares, cuadrículas abiertas, iconos SVG decorativos y avisos diferenciados. Los iconos acompañan los nombres escritos y no sustituyen información ni añaden controles interactivos. Este rediseño conserva los textos sanitarios y las referencias de la revisión documental.
+Cada página comparte menú principal, ruta de navegación y créditos del Grupo 4: Carlos Murillo, Eduardo Flores, Jonatán Suazo y Hugo Ramírez. Datos proporcionados por el usuario para este proyecto de Salud Pública IV, UNAH, Gracias, Lempira.
 
-`assets/hierarchy.css` prioriza síntomas y acciones, presenta los accesos como botones y organiza los temas de consulta adicional en paneles nativos desplegables. Las referencias se consultan desde “Ver fuentes”. Las ilustraciones actuales proceden de Health Icons (CC0); ver `assets/img/healthicons/CREDITS.md`. Las flechas de acción son SVG para evitar su conversión a emojis en iOS.
+La navegación utiliza enlaces HTML reales. El menú móvil y las respuestas usan controles nativos; funcionan sin JavaScript. assets/navigation.js mejora la apertura de referencias y mantiene enlaces antiguos con fragmentos. assets/pages.css define la jerarquía entre portada y páginas de lectura.
+
+Los estilos previos siguen en assets/styles.css, assets/editorial.css y assets/hierarchy.css. Las ilustraciones de síntomas proceden de Health Icons (CC0); ver assets/img/healthicons/CREDITS.md. Las flechas son SVG para evitar su conversión a emojis en iOS.
 
 El contenido educativo fue revisado y precisado el 22 de octubre de 2026 contra SESAL, OMS, CDC y NHS. Cada bloque clínico incluye referencias consultables. Ver [registro de revisión](docs/REVISION-DE-CONTENIDO.md). La revisión es documental, no una certificación clínica.
 

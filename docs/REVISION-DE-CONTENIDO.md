@@ -75,3 +75,10 @@ Los documentos de SESAL, OMS, NHS y las fichas de imágenes devolvieron HTTP 200
 Se mantienen visibles los síntomas y los pasos de atención. Los temas adicionales se presentan en paneles desplegables y las referencias junto a cada bloque se abren con “Ver fuentes”. Los enlaces directos abren los paneles necesarios; el contenido sigue disponible sin JavaScript.
 
 Las seis ilustraciones decorativas de síntomas proceden de [Health Icons](https://healthicons.org/about), que declara sus iconos de uso libre bajo CC0. Se alojan localmente y se han recoloreado. Su licencia, autoría y rutas originales están documentadas en `assets/img/healthicons/CREDITS.md`. Son apoyos visuales junto a los nombres escritos; no constituyen respaldo científico adicional. Las dos fotografías científicas conservan los créditos CDC PHIL anteriores. No se han añadido afirmaciones clínicas ni cambiado las referencias sanitarias mediante esta reorganización.
+
+
+## Distribución en páginas y créditos del grupo
+
+La portada presenta rutas de consulta. Los textos clínicos y sus referencias se distribuyen entre síntomas y atención, prevención, tratamiento, información sobre TB y preguntas. Las fuentes se reúnen en una página propia. Se conservan los enlaces antiguos y la dirección principal utilizada por el QR.
+
+Los créditos del Grupo 4 aparecen al pie de cada página. Carlos Murillo, Eduardo Flores, Jonatán Suazo y Hugo Ramírez; Salud Pública IV, UNAH; Gracias, Lempira. Estos datos fueron aportados expresamente por el usuario para su publicación.

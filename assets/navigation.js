@@ -1,48 +1,40 @@
-// Every destination and answer remains available without JavaScript.
+// Navigation enhances native links; all pages and content work without scripting.
 (() => {
-  const nav = document.querySelector('.topic-nav');
-  const links = [...nav.querySelectorAll('a')];
-  const destinations = links.map(link => document.querySelector(link.hash));
-  const revealDestination = () => {
-    const target = document.getElementById(location.hash.slice(1));
-    if (!target) return;
-    let ancestor = target;
-    while (ancestor) {
-      if (ancestor.tagName === 'DETAILS') ancestor.open = true;
-      ancestor = ancestor.parentElement;
-    }
-    requestAnimationFrame(() => target.scrollIntoView({ block: 'start' }));
+  const menu = document.querySelector('.site-menu');
+  const narrow = matchMedia('(max-width: 850px)');
+  const updateMenu = () => { if (menu) menu.open = !narrow.matches; };
+  updateMenu();
+  narrow.addEventListener('change', updateMenu);
+  const legacy = {
+    sintomas:'sintomas.html', 'que-hacer':'sintomas.html', contacto:'sintomas.html',
+    diagnostico:'sintomas.html', 'atencion-urgente':'sintomas.html',
+    'que-es':'conocer.html', transmision:'conocer.html', prevencion:'prevencion.html',
+    tratamiento:'tratamiento.html', mitos:'preguntas.html', fuentes:'fuentes.html'
   };
-  window.addEventListener('hashchange', revealDestination);
+  for(let n=1;n<=13;n++) legacy['fuente-'+n]='fuentes.html';
+  const followLegacy = () => {
+    if (document.body.dataset.page !== 'index.html') return false;
+    const id=location.hash.slice(1), file=legacy[id];
+    if (!file) return false;
+    location.replace(file+'#'+id);
+    return true;
+  };
+  const reveal = () => {
+    if (followLegacy()) return;
+    const target=document.getElementById(location.hash.slice(1));
+    if (!target) return;
+    for(let ancestor=target;ancestor;ancestor=ancestor.parentElement) {
+      if(ancestor.tagName==='DETAILS') ancestor.open=true;
+    }
+    requestAnimationFrame(()=>target.scrollIntoView({block:'start'}));
+  };
   document.addEventListener('click', event => {
-    const link = event.target.closest('a[href^="#"]');
-    if (!link) return;
-    const target = document.getElementById(link.hash.slice(1));
-    let ancestor = target;
-    while (ancestor) {
-      if (ancestor.tagName === 'DETAILS') ancestor.open = true;
-      ancestor = ancestor.parentElement;
+    const link=event.target.closest('a[href^="#"]');
+    const target=link&&document.getElementById(link.hash.slice(1));
+    for(let ancestor=target;ancestor;ancestor=ancestor.parentElement) {
+      if(ancestor.tagName==='DETAILS') ancestor.open=true;
     }
   });
-  revealDestination();
-  let scheduled = false;
-  const updateCurrent = () => {
-    scheduled = false;
-    let current = -1;
-    const edge = nav.getBoundingClientRect().bottom + 32;
-    destinations.forEach((section, index) => {
-      if (section.getBoundingClientRect().top <= edge) current = index;
-    });
-    if (current >= 0 && destinations[current].getBoundingClientRect().bottom <= edge) current = -1;
-    if (document.querySelector('#fuentes').getBoundingClientRect().top <= edge) current = -1;
-    links.forEach((link, index) => {
-      if (index === current) link.setAttribute('aria-current', 'location');
-      else link.removeAttribute('aria-current');
-    });
-  };
-  window.addEventListener('scroll', () => {
-    if (!scheduled) { scheduled = true; requestAnimationFrame(updateCurrent); }
-  }, { passive: true });
-  window.addEventListener('resize', updateCurrent);
-  updateCurrent();
+  window.addEventListener('hashchange',reveal);
+  reveal();
 })();
