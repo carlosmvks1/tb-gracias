@@ -6,8 +6,11 @@
   const revealDestination = () => {
     const target = document.getElementById(location.hash.slice(1));
     if (!target) return;
-    const details = target.closest('details');
-    if (details) details.open = true;
+    let ancestor = target;
+    while (ancestor) {
+      if (ancestor.tagName === 'DETAILS') ancestor.open = true;
+      ancestor = ancestor.parentElement;
+    }
     requestAnimationFrame(() => target.scrollIntoView({ block: 'start' }));
   };
   window.addEventListener('hashchange', revealDestination);
@@ -15,8 +18,11 @@
     const link = event.target.closest('a[href^="#"]');
     if (!link) return;
     const target = document.getElementById(link.hash.slice(1));
-    const details = target?.closest('details');
-    if (details) details.open = true;
+    let ancestor = target;
+    while (ancestor) {
+      if (ancestor.tagName === 'DETAILS') ancestor.open = true;
+      ancestor = ancestor.parentElement;
+    }
   });
   revealDestination();
   let scheduled = false;

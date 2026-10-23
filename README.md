@@ -10,6 +10,8 @@ La interfaz prioriza síntomas, acciones y exposición, con tres accesos directo
 
 La capa visual editorial se encuentra en `assets/editorial.css`: encabezados con etiquetas angulares, cuadrículas abiertas, iconos SVG decorativos y avisos diferenciados. Los iconos acompañan los nombres escritos y no sustituyen información ni añaden controles interactivos. Este rediseño conserva los textos sanitarios y las referencias de la revisión documental.
 
+`assets/hierarchy.css` prioriza síntomas y acciones, presenta los accesos como botones y organiza los temas de consulta adicional en paneles nativos desplegables. Las referencias se consultan desde “Ver fuentes”. Las ilustraciones actuales proceden de Health Icons (CC0); ver `assets/img/healthicons/CREDITS.md`. Las flechas de acción son SVG para evitar su conversión a emojis en iOS.
+
 El contenido educativo fue revisado y precisado el 22 de octubre de 2026 contra SESAL, OMS, CDC y NHS. Cada bloque clínico incluye referencias consultables. Ver [registro de revisión](docs/REVISION-DE-CONTENIDO.md). La revisión es documental, no una certificación clínica.
 
 Las imágenes están alojadas en `assets/img/` y sus fuentes y condiciones se documentan en `assets/img/CREDITS.md`, con créditos visibles en la página.
