@@ -4,6 +4,10 @@ Material educativo de Salud Pública IV, UNAH, 2026. Información sobre tubercul
 
 Sitio: https://carlosmvks1.github.io/tb-gracias/
 
+## Permanencia del QR
+
+El QR impreso y distribuido para este proyecto dirige exactamente a la URL anterior. Esa dirección se considera permanente: las mejoras del sitio no deben cambiarla ni dejarla sin servicio. Ver [QR-PERMANENCE.md](QR-PERMANENCE.md). Un flujo automático comprueba la existencia de la portada, la URL canónica y las rutas públicas principales en cada Pull Request y cada cambio a `main`.
+
 La pestaña y la identidad al compartir enlaces usan “Tuberculosis: Guía”. Todas las páginas incluyen favicon SVG/ICO/PNG, icono para iOS, URL canónica y metadatos Open Graph y Twitter con una imagen de presentación de 1200 × 630 en `assets/brand/`. No dependen de JavaScript para que los lectores de enlaces los detecten.
 
 Página estática sin dependencias de compilación. GitHub Pages publica `index.html` desde la raíz de `main`. Se conserva `.nojekyll`; todas las rutas de recursos son relativas para funcionar bajo `/tb-gracias/`.
@@ -16,7 +20,7 @@ La navegación utiliza enlaces HTML reales. El menú móvil y las respuestas usa
 
 Los estilos previos siguen en assets/styles.css, assets/editorial.css y assets/hierarchy.css. Las ilustraciones de síntomas proceden de Health Icons (CC0); ver assets/img/healthicons/CREDITS.md. Las flechas son SVG para evitar su conversión a emojis en iOS.
 
-El contenido educativo fue revisado y precisado el 22 de octubre de 2026 contra SESAL, OMS, CDC y NHS. Cada bloque clínico incluye referencias consultables. Ver [registro de revisión](docs/REVISION-DE-CONTENIDO.md). La revisión es documental, no una certificación clínica.
+El contenido educativo fue revisado y precisado el 29 de octubre de 2026 contra SESAL, OMS, CDC y NHS. Cada bloque clínico incluye referencias consultables. Ver [registro de revisión](docs/REVISION-DE-CONTENIDO.md). La revisión es documental, no una certificación clínica.
 
 Las imágenes están alojadas en `assets/img/` y sus fuentes y condiciones se documentan en `assets/img/CREDITS.md`, con créditos visibles en la página.
 

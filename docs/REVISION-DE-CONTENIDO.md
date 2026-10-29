@@ -1,6 +1,6 @@
 # Revisión documental de TB Gracias
 
-Fecha de consulta: 22 de octubre de 2026. Alcance: todos los textos clínicos visibles, respuestas desplegables, títulos con afirmaciones sanitarias, pies de imagen y texto alternativo de la página.
+Fecha de consulta: 29 de octubre de 2026. Alcance: todos los textos clínicos visibles, respuestas desplegables, títulos con afirmaciones sanitarias, pies de imagen y texto alternativo de la página.
 
 Cada bloque clínico lleva un identificador `data-claim` y referencias `data-evidence`. Los números coinciden con la lista pública de fuentes en la página. Son referencias documentales, no una certificación clínica ni una garantía de que una afirmación nunca cambiará.
 
@@ -25,12 +25,16 @@ Cada bloque clínico lleva un identificador `data-claim` y referencias `data-evi
 | `latente` | 8 | CDC, información general y síntomas |
 | `activa` | 3, 5 | OMS, sintomatología; CDC, causas y transmisión |
 | `transmision` | 5 | CDC, cómo se propaga y cuándo es posible la transmisión |
+| `prevencion-aerea` | 3, 5 | OMS y CDC, transmisión aérea y prevención |
 | `prevencion` | 2, 3, 9 | SESAL, 7.1, 7.2, 8.7; OMS y CDC, prevención |
 | `tratamiento` | 3, 9, 12 | OMS, tratamiento; CDC, adherencia y efectos secundarios |
 | `mito-tos` | 1, 7 | SESAL, diagnóstico diferencial y detección; CDC, pruebas |
 | `mito-tratamiento` | 12 | CDC, cómo completar el tratamiento |
 | `mito-poblacion` | 7 | CDC, quién debería hacerse la prueba |
 | `mito-deteccion` | 3 | OMS, prevención |
+| `mito-objetos` | 5 | CDC, formas de transmisión y situaciones que no transmiten TB |
+| `contacto-sin-sintomas` | 3, 6, 7 | OMS y CDC, exposición, evaluación y pruebas |
+| `mito-cura` | 3, 12 | OMS y CDC, curabilidad y adherencia al tratamiento |
 | Fotografía de portada, pie y texto alternativo | 11 | Ficha CDC PHIL #18139, descripción y derechos |
 | Fotografía de apoyo, pie y texto alternativo | 13 | Ficha CDC PHIL #5789, descripción y derechos |
 
@@ -43,6 +47,8 @@ Cada bloque clínico lleva un identificador `data-claim` y referencias `data-evi
 5. **Pruebas:** se diferencia detección de infección de diagnóstico de enfermedad activa, incluidos los límites de un resultado negativo.
 6. **Tratamiento:** se conserva la adherencia, pero se añade consulta ante efectos adversos y la posibilidad de cambios indicados por el equipo de salud.
 7. **Detección temprana:** se habla de ayuda a reducir transmisión y mejorar recuperación; se elimina la formulación de protección garantizada.
+8. **Prevención:** se hace explícito desde el inicio que la vía principal de transmisión es aérea, para dar contexto a la ventilación y a las medidas respiratorias.
+9. **Preguntas frecuentes:** se añaden dudas sobre objetos y cubiertos, contacto sin síntomas y posibilidad de curación, sin agregar esquemas terapéuticos ni recomendaciones individualizadas.
 
 ## Fuentes primarias
 
@@ -60,13 +66,15 @@ Cada bloque clínico lleva un identificador `data-claim` y referencias `data-evi
 12. [CDC. Tratamiento](https://www.cdc.gov/tb/es/treatment/tratamiento.html).
 13. [CDC PHIL #5789, CDC / Dr. George P. Kubica](https://wwwn.cdc.gov/phil/Details.aspx?pid=5789).
 
+Como comprobación de actualización, el 29 de octubre de 2026 se revisó también la [segunda edición de las guías consolidadas de la OMS, módulo 4: tratamiento y atención, publicada el 25 de septiembre de 2026](https://www.who.int/publications/i/item/9789240125124). No se añadieron esquemas, dosis ni duraciones al material educativo: esos aspectos continúan remitidos al personal de salud y al protocolo nacional.
+
 ## Límites de esta revisión
 
 Se comprobaron las afirmaciones contra estas fuentes consultadas; no se afirma que estas sean todas las publicaciones existentes ni que el conocimiento sea inmutable. No se evaluó a pacientes ni se verificaron servicios, horarios, personal o disponibilidad de pruebas en el centro local. Por eso la página remite al personal de salud y no inventa contactos ni rutas asistenciales.
 
 ## Comprobación de la interfaz
 
-Verificada en anchos de 1440, 768, 390 y 320 píxeles: sin desbordamiento horizontal, con imágenes, destinos internos y menú completo. Probados los tres accesos por necesidad, apertura de fuentes, enlaces directos a referencias, preguntas con teclado y funcionamiento sin JavaScript. Los 15 bloques clínicos y ambas imágenes apuntan a entradas existentes de la lista de fuentes. Estas comprobaciones técnicas no prueban por sí solas la veracidad del contenido; esa revisión se realizó consultando los documentos indicados arriba.
+Verificada en anchos de 1440, 768, 390 y 320 píxeles: sin desbordamiento horizontal, con imágenes, destinos internos y menú completo. Probados los tres accesos por necesidad, apertura de fuentes, enlaces directos a referencias, preguntas con teclado y funcionamiento sin JavaScript. Los 19 bloques clínicos y ambas imágenes apuntan a entradas existentes de la lista de fuentes. Estas comprobaciones técnicas no prueban por sí solas la veracidad del contenido; esa revisión se realizó consultando los documentos indicados arriba.
 
 Los documentos de SESAL, OMS, NHS y las fichas de imágenes devolvieron HTTP 200 en la comprobación directa. Las páginas CDC se consultaron mediante el lector web; el acceso HTTP automatizado directo devolvió 403, por lo que no se confunde esa respuesta con una referencia inexistente ni se afirma disponibilidad universal de los enlaces.
 
