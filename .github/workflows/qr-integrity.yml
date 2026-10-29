@@ -1,0 +1,35 @@
+name: QR and route integrity
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Preserve the printed QR destination
+        shell: bash
+        run: |
+          set -euo pipefail
+          QR_URL="https://carlosmvks1.github.io/tb-gracias/"
+
+          test -f index.html
+          grep -Fq "<link rel=\"canonical\" href=\"$QR_URL\">" index.html
+          grep -Fq "$QR_URL" README.md
+          grep -Fq "$QR_URL" QR-PERMANENCE.md
+
+          for file in             sintomas.html             prevencion.html             tratamiento.html             conocer.html             preguntas.html             fuentes.html
+          do
+            test -f "$file"
+          done
+
+          echo "QR destination and public routes are intact."
